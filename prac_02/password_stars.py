@@ -1,12 +1,15 @@
 """
 Password stars Program
+password_stars.py
 """
 MINIMUM_LENGTH = 4
+
 
 def main():
     """Get and print password in form of stars"""
     password = get_password()
     print_password_stars(password)
+
 
 def get_password():
     """Get password of minimum length"""
