@@ -1,8 +1,12 @@
+"""
+score menu
+score_menu.py
+"""
 import random
 
-def get_valid_score():
 
-    flag=1
+def get_valid_score():
+    flag = 1
     while flag:
         try:
             score = int(input("Enter a valid score (0-100 inclusive): "))
@@ -13,6 +17,7 @@ def get_valid_score():
         except ValueError:
             print("Invalid input. Please enter a valid score.")
 
+
 def get_result(score):
     """Get result status"""
     if score > 90:
@@ -22,17 +27,19 @@ def get_result(score):
     else:
         return "Bad"
 
+
 def show_stars(score):
     """Show stars"""
     for _ in range(score):
         print("*", end="")
     print()
 
+
 def main():
-    flag=1;
+    flag = 1;
     print("Welcome to the Score Program!")
 
-    while flag==1:
+    while flag == 1:
         print("\nMain Menu:")
         print("(G)et a valid score")
         print("(P)rint result")
@@ -55,9 +62,10 @@ def main():
             else:
                 print("No score entered. Please select (G)et a valid score first.")
         elif choice == "Q":
-            print("Farewell! Thank you for using the Score Program.")
+            print(" Thank you for using the Score Program.")
             break
         else:
             print("Invalid choice. Please try again.")
+
 
 main()

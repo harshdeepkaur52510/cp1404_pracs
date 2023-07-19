@@ -27,9 +27,11 @@ def get_data():
     return data
 
 
-def display_subjects(data):
+def display_data(data):
     for data in data:
-        print("{} is taught by {:12} and has {:3} students".format(*subject))
+        print("{} is taught by {:12} and has {:3} students".format(*data))
 
+
+# print all items for each list in the lists of lists
 
 main()
